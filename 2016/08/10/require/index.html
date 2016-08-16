@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="html、js、javascript前端开发技术分享博客" />
+  <meta name="keywords" content="require," />
 
 
 
@@ -84,15 +84,18 @@
 
 
 
-<meta name="description" content="js、css、html前端开发博客，分享IT程序员的北京生活，分享印度文化，分享ukelele等">
-<meta property="og:type" content="website">
-<meta property="og:title" content="前端开发博客分享">
-<meta property="og:url" content="http://learnfe.info/tags/北京/index.html">
+<meta name="description" content="require原理解析、require源码解析">
+<meta property="og:type" content="article">
+<meta property="og:title" content="require原理解析">
+<meta property="og:url" content="http://learnfe.info/2016/08/10/require/index.html">
 <meta property="og:site_name" content="前端开发博客分享">
-<meta property="og:description" content="js、css、html前端开发博客，分享IT程序员的北京生活，分享印度文化，分享ukelele等">
+<meta property="og:description" content="require原理解析、require源码解析">
+<meta property="og:image" content="http://learnfe.info/images/require.png">
+<meta property="og:updated_time" content="2016-08-11T03:38:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端开发博客分享">
-<meta name="twitter:description" content="js、css、html前端开发博客，分享IT程序员的北京生活，分享印度文化，分享ukelele等">
+<meta name="twitter:title" content="require原理解析">
+<meta name="twitter:description" content="require原理解析、require源码解析">
+<meta name="twitter:image" content="http://learnfe.info/images/require.png">
 
 
 
@@ -113,9 +116,9 @@
 
 
 
-  <link rel="canonical" href="http://learnfe.info/tags/北京/"/>
+  <link rel="canonical" href="http://learnfe.info/2016/08/10/require/"/>
 
-  <title> 标签: 北京 | 前端开发博客分享 </title>
+  <title> require原理解析 | 前端开发博客分享 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +139,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,74 +227,156 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        北京
-        <small>标签</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/08/16/beijing2/" itemprop="url">
-              
-                <span itemprop="name">北漂生活二</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-16T23:07:53+08:00"
-              content="2016-08-16" >
-          08-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/23/beijing1/" itemprop="url">
-              
-                <span itemprop="name">北漂生活一</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-07-23T23:25:58+08:00"
-              content="2016-07-23" >
-          07-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                require原理解析
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-10T17:19:34+08:00" content="2016-08-10">
+              2016-08-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端开发/" itemprop="url" rel="index">
+                    <span itemprop="name">前端开发</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/10/require/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/10/require/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+          &nbsp; | &nbsp;
+          <span id="/2016/08/10/require/"class="leancloud_visitors" data-flag-title="require原理解析">
+           &nbsp;阅读次数
+          </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="require执行流程图"><a href="#require执行流程图" class="headerlink" title="require执行流程图"></a>require执行流程图</h3><p><img src="/images/require.png" alt="require"></p>
+<h3 id="require原理讲解"><a href="#require原理讲解" class="headerlink" title="require原理讲解"></a>require原理讲解</h3><h4 id="define的作用"><a href="#define的作用" class="headerlink" title="define的作用"></a>define的作用</h4><h4 id="require的作用"><a href="#require的作用" class="headerlink" title="require的作用"></a>require的作用</h4>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/require/" rel="tag">#require</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/30/wy/" rel="next" title="2016年网易前端开发面试经验">
+                <i class="fa fa-chevron-left"></i> 2016年网易前端开发面试经验
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/16/beijing2/" rel="prev" title="北漂生活二">
+                北漂生活二 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -299,6 +384,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/10/require/"
+           data-title="require原理解析" data-url="http://learnfe.info/2016/08/10/require/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -318,8 +411,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/giraffe.jpg"
@@ -369,6 +471,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#require执行流程图"><span class="nav-number">1.</span> <span class="nav-text">require执行流程图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#require原理讲解"><span class="nav-number">2.</span> <span class="nav-text">require原理讲解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#define的作用"><span class="nav-number">2.1.</span> <span class="nav-text">define的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#require的作用"><span class="nav-number">2.2.</span> <span class="nav-text">require的作用</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -481,6 +594,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
